@@ -1,0 +1,86 @@
+Introduction of container
+
+hypervisor uses the concept called  virtualization . virtualization  is basically the concept of creating VM on top of physical server
+
+VM is a logical separation 
+
+
+even tho they arw running on same physical server the VM has is own software and Apps will run on them
+
+-> 	so then why we need containerization
+
+-> container can be created in 2 ways 
+one is on top of VM and the other is on top of physical servers
+
+
+
+maintain physical server is complex where there is a patch and secutrity fixes
+
+-> containers are very light weight in nature because they dont  have full OS
+
+-> stage 1 docker file  execute -> docker image -> execute image -> create container
+
+-> submit all the commands to docker engine it will create all the containers
+
+-> docker Engine is the single failure of the point that means if the docker is down all your containers are down
+
+-> A containe is a bundle of  Application , application libries, required to run your application  and the minimum system dependencies
+
+-> containers have a base os or minimum operating system dependencies to form a locigal separation from containers
+
+
+-> files and folders in container base image 
+
+/bin  -> binary executables such as ls cp
+/sbin  -> system binary files ,such as init 
+/etc  -> configuration files for various  system services
+/lib  -> contains libary files that are used by the binary executables
+/usr -> contains user related files and utilities such as applications
+/var -> contains varailbe data such as log  files,spool files
+/root -> it is the root directory of the root user 
+
+this files and folers create a logical sepeartion from other container that means other container wont share this files in common
+
+............................................................................
+files and folders that containers use from the host OS
+
+the host file system
+
+Network stack
+
+NameSpaces
+
+control groups
+
+what is docker it is a platform to implement the concept of containerization and docker is the way to containzering your apps,which means
+ using docker you can build container images and run the docker images to create containers and also push these container images
+
+->   are there any other technology "PODMAN"
+-> docker has centralized docker deaemon
+-> docker commands are going to recive by the docker daemon  is the process
+-> using docker deamon only we push docker container to docker registory
+
+-> docker deamon is the heart of the docker docker deamons goes down technically docker is down
+--------------------------------------------------------------------------------
+what is docker file
+
+a set of instructions 
+
+docker daemon itself is like a service
+
+
+
+-----------------------------------------------
+
+docker registories stores the docker images  
+
+-> docker HUB is a central registry where you can share your docker images with others
+->quay.io is the other central hub like docker hub
+
+-> version control platform for your images
+-> registry is a platform where you can share your docker images or store the images
+->
+
+
+
+
