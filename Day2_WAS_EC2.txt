@@ -11,4 +11,36 @@ types of instances of EC2
 when ec2 instance is created
 
 update all the packages
--> 
+-> sudo apt update
+
+update as the root user sudo su -
+
+apt update
+------------------------------------------------------------
+
+Creating a docker on EC2 instance
+
+-> sudo apt install docker.io -y 
+
+-> sudo systemctl status docker  -> it will tell that the docker is running or not
+
+->   sudo usermod -aG docker ubuntu   -> this is because you have created the docker using sudo so need to be add ubuntu to docker group
+
+-> **********docker build*********
+
+-> docker build -t sunilya96/mmis/my-first-docker-image:latest
+
+
+docker run -it sunilya96/mmis/my-first-docker-image:latest
+
+
+to push the docker images to docker hub 
+
+you need to login
+
+
+docker push sunilya96/mmis/my-first-docker-image:latest
+
+
+
+this is for testing
