@@ -1,0 +1,14 @@
+EC2 => elastic cloud compute -> cpu ,ram,disk
+
+types of instances of EC2
+
+-> general purpose
+-> compute optimize
+-> memory optimize
+->storage
+-> accelerated optimize
+
+when ec2 instance is created
+
+update all the packages
+-> 
